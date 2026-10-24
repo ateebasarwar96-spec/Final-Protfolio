@@ -18,3 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(section);
     });
 });
+// Jab button par click ho toh PDF open karwane ke liye JavaScript
+document.addEventListener("DOMContentLoaded", function() {
+    const cvButton = document.getElementById("cvBtn");
+    
+    if (cvButton) {
+        cvButton.addEventListener("click", function(event) {
+            console.log("CV Button Clicked Successfully!");
+        });
+    }
+});
